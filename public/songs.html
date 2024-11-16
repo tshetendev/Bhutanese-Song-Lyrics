@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Songs</title>
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/song.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div>
+                <img src="./utils/BSlogo.png" id="logo-nav" alt="">
+            </div>
+            <div class="main-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="./songs.html">Songs</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </div>
+            <div class="auth-links">
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="hero-songs">
+        <h1>Songs</h1>
+    </div>
+
+
+    <div class="songs-div-1">
+        <h1>Song Titles</h1>
+        <div class="song-list" id="songList">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Approved Songs</h1>
+        <div id="songs-container">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <div id="loading-animation" class="loading hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="home-div-2">
+        <h2>Featured Songs</h2>
+        <p>Discover the heart and soul of Bhutanese music with our handpicked selection of featured songs.
+            From traditional folk tunes to contemporary hits, dive into the enchanting world of Bhutanese melodies.
+        </p>
+
+        <div class="slider-container">
+            <div class="loader" id="loader"></div>
+            <button class="arrow left" id="leftArrow">&#10094;</button>
+            <div class="featured-songs" id="featuredSongs"></div>
+            <button class="arrow right" id="rightArrow">&#10095;</button>
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/song.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

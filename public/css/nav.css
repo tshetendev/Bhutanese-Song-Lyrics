@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-nav {
+    width: 40px;
+    height: auto;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative; /* Needed for ::after */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative; /* Needed for ::after */
+    font-weight: 500;
+}
+
+/* Underline animation */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Position the underline slightly below the text */
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand underline to full width */
+}
+
+.auth-links {
+    display: flex;
+    margin-right: 5vw;
+    padding: 0;
+}
+
+.auth-links li {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border 0.3s ease-in-out; /* Smooth border transition */
+}
+
+.auth-links li:hover {
+    border: 1px solid black;
+}
+
+.main-links {
+    display: flex;
+    margin: auto;
+}
+
+
+
+/* popups for auth  */
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    /* Red for error */
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+    /* Green for success */
+}
+
+.alert .close-alert {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* confirmation alert box */
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.confirmation-content h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.confirmation-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.confirmation-content button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmation-content button:hover {
+    background-color: #45a049;
+}
+
+.close-confirmation {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+

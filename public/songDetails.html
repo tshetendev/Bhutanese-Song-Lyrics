@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Details</title>
+    <link rel="stylesheet" href="./css/songDetails.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div>
+                <img src="./utils/BSlogo.png" id="logo-nav" alt="">
+            </div>
+            <div class="main-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="./songs.html">Songs</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </div>
+            <div class="auth-links">
+                <li><a href="#" id="loginBtn">Login</a></li>
+                <li><a href="#" id="registerBtn">Register</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="side-bar">
+        <img src="./utils/BSlogo.png" alt="">
+        <h1>Song List</h1>
+        <div class="song-title-list" id="song-title-list"></div>
+    </div>
+
+
+
+    <div id="songDetails">
+        <!-- Loading Spinner and Message -->
+        <div id="loadingContainer" class="loading-container">
+            <div class="spinner"></div>
+            <p>Loading song details...</p>
+        </div>
+
+        <!-- Song Details (Initially Hidden) -->
+        <img id="albumPicture" style="display: none;" />
+        <h1 id="songTitle"></h1>
+        <div class="left-detail">
+            <p id="songArtist"></p>
+            <p id="songDatePosted"></p>
+            <p id="songStatus"></p>
+            <p id="songOwner"></p>
+            <p id="songViews"></p>
+        </div>
+        <p id="songLyrics"></p>
+    </div>
+
+
+
+    <!-- Link to external JavaScript file -->
+    <script src="./js/songDetails.js"></script>
+
+</body>
+
+</html>

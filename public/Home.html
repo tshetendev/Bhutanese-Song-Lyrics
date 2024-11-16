@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div>
+                <img src="./utils/BSlogo.png" id="logo-nav" alt="Logo">
+            </div>
+            <div class="main-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="./songs.html">Songs</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </div>
+            <div class="auth-links">
+                <li><a href="#" id="logoutLink">Logout</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="hero-songs">
+        <div class="hero-words">
+            <h1 id="greeting">Hello, Artist!</h1>
+            <a href="./addSong.html">Add Song</a>
+        </div>
+    </div>
+
+    <div class="songs-div-1">
+        <h1>All Songs</h1>
+        <div class="song-list" id="songList">
+        </div>
+    </div>
+
+    <!-- Alert Box -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-confirmation">&times;</span>
+            <p id="confirmationMessage"></p>
+            <button id="confirmLogout">OK</button>
+            <button id="cancelLogout">Cancel</button>
+        </div>
+    </div>
+    
+    
+
+    <!-- Link to external JavaScript file -->
+    <script src="./js/song.js"></script>
+    <script src="./js/profile.js"></script>
+    <script src="./js/logout.js"></script>
+
+</body>
+
+</html>

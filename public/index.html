@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhutanese Songs</title>
+    <link rel="icon" href="./utils/BSlogo.png" type="image/icon type">
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <div>
+                <img src="./utils/BSlogo.png" id="logo-nav" alt="">
+            </div>
+            <div class="main-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="./songs.html">Songs</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </div>
+            <div class="auth-links">
+                <li><a href="#" id="loginBtn">Login</a></li>
+                <li><a href="#" id="registerBtn">Register</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Alert Box -->
+    <div id="alertBox" class="alert" style="display: none;">
+        <span id="alertMessage"></span>
+        <span class="close-alert">&times;</span>
+    </div>
+
+    <!-- Custom Confirmation Modal -->
+    <div id="confirmationModal" class="confirmation-modal">
+        <div class="confirmation-content">
+            <span class="close-confirmation">&times;</span>
+            <h2>Success</h2>
+            <p id="confirmationMessage"></p>
+            <button id="confirmBtn">Confirm</button>
+        </div>
+    </div>
+
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginError" class="error"></div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                <input type="file" name="profilePicture" accept="image/*" required>
+                <button type="submit">Register</button>
+            </form>
+            <div id="registerError" class="error"></div>
+        </div>
+    </div>
+
+
+    <div class="hero-section">
+        <div class="wordings-hero">
+            <h2>Welcome to</h2>
+            <h1>Bhutanese Song</h1>
+            <a href="#" id="addLyricsBtn">Add Your Lyrics</a>
+            <a href="./songs.html">Song Lyrics</a>
+        </div>
+    </div>
+
+    <div class="home-div-1">
+        <img src="./utils/BSlogo.png" alt="">
+        <h3>“Your ultimate destination for Bhutanese song lyrics! Explore the rich cultural heritage of Bhutan through
+            the power of music.”</h3>
+    </div>
+
+    <div class="home-div-2">
+        <h2>Featured Songs</h2>
+        <p>Discover the heart and soul of Bhutanese music with our handpicked selection of featured songs.
+            From traditional folk tunes to contemporary hits, dive into the enchanting world of Bhutanese melodies.
+        </p>
+        <div class="slider-container">
+            <div class="loader" id="loader"></div> 
+            <button class="arrow left" id="leftArrow">&#10094;</button>
+            <div class="featured-songs" id="featuredSongs"></div>
+            <button class="arrow right" id="rightArrow">&#10095;</button>
+        </div>
+
+
+    </div>
+
+    <div class="home-div-3">
+        <h1>About Us</h1>
+        <p>Your premier destination for Bhutanese song lyrics! Our platform is dedicated to celebrating the rich
+            cultural heritage of Bhutan through the captivating medium of music.
+        </p>
+        <img src="./utils/image 1.png" alt="">
+    </div>
+
+    <div class="home-div-4">
+        <h1>Our mission</h1>
+        <div class="display-mission">
+            <p>Our mission is simple yet profound: to preserve, promote, and share the beauty of Bhutanese music with
+                the
+                world. We believe that music transcends language barriers and serves as a powerful expression of
+                identity,
+                emotion, and tradition.
+            </p>
+            <img src="./utils/image 2.png" alt="">
+        </div>
+    </div>
+
+    <div class="home-div-5">
+        <h1>Our Story</h1>
+        <div class="display-mission-2">
+            <img src="./utils/image 3.png" alt="">
+            <p>
+                Bhutanese Song Lyrics was born out of a deep love and appreciation for Bhutanese music. Inspired by the
+                mesmerizing melodies and poetic lyrics of Bhutanese songs, our team came together with a shared vision
+                to
+                create a centralized hub where enthusiasts could access accurate and comprehensive song lyrics.
+            </p>
+        </div>
+    </div>
+
+    <div class="home-div-6">
+        <h1>Why Bhutanese Music?</h1>
+        <p>
+            Bhutanese Song Lyrics was born out of a deep love and appreciation for Bhutanese music. Inspired by the
+            mesmerizing melodies and poetic lyrics of Bhutanese songs, our team came together with a shared vision to
+            create a centralized hub where enthusiasts could access accurate and comprehensive song lyrics.
+        </p>
+
+        <div class="display-img-home">
+            <img src="./utils/image 5.png" alt="">
+            <img src="./utils/image 4.png" alt="">
+        </div>
+    </div>
+
+    <div class="home-div-7">
+        <h1>Thank You</h1>
+        <p>
+            We extend our heartfelt gratitude to all our users, contributors, and supporters who have helped make
+            Bhutanese Song Lyrics a thriving community dedicated to celebrating Bhutanese music. Together, we can
+            continue to spread the joy and beauty of Bhutanese songs far and wide.
+        </p>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/auth.js"></script>
+
+</body>
+
+</html>
